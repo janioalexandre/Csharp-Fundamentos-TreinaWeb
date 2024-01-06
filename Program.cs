@@ -1,4 +1,6 @@
-﻿namespace Fundamentos
+﻿using System;
+
+namespace Fundamentos
 {
     class Program
     {
@@ -7,7 +9,7 @@
             /* Hello World!
             Console.WriteLine("Hello World!");
             */
-
+            
             /* Entrada e saída de dados no terminal
             Console.WriteLine("Digite seu nome:");
             var nome = Console.ReadLine();
@@ -36,7 +38,7 @@
             Console.WriteLine(idade);
             */ 
 
-            /* O tipo String */
+            /* O tipo String 
             var nome = "Janio";
             var sobrenome = "Alexandre";
             var nomeCompleto = nome + " " + sobrenome;
@@ -50,7 +52,27 @@
             Console.WriteLine(nomeCompleto2.StartsWith("J"));   
             Console.WriteLine(nomeCompleto2.EndsWith("e"));   
             Console.WriteLine(nomeCompleto2.IndexOf("a"));   
-            Console.WriteLine(nomeCompleto2.LastIndexOf("e"));   
+            Console.WriteLine(nomeCompleto2.LastIndexOf("e"));
+            */
+
+            /* O tipo DateTime */
+            var hoje = DateTime.Today;
+            var agora = DateTime.Now;
+            var data1 = new DateTime(2024, 01, 05);
+            var data2 = new DateTime(2024, 01, 05, 22, 57, 30);
+            
+            Console.WriteLine(data2.Day);
+            Console.WriteLine(data2.Month);
+            Console.WriteLine(data2.Year);
+            Console.WriteLine(data2.Hour);
+            Console.WriteLine(data2.Minute);
+            Console.WriteLine(data2.Second);
+            Console.WriteLine(data2.AddDays(5));
+            Console.WriteLine(data2.AddMonths(-1));
+            Console.WriteLine(data2.ToLongDateString());
+            Console.WriteLine(data2.ToLongTimeString());
+            Console.WriteLine(data2.ToShortDateString());
+            Console.WriteLine(data2.ToShortTimeString());
         }
     }
 }
