@@ -55,7 +55,7 @@ namespace Fundamentos
             Console.WriteLine(nomeCompleto2.LastIndexOf("e"));
             */
 
-            /* O tipo DateTime */
+            /* O tipo DateTime 
             var hoje = DateTime.Today;
             var agora = DateTime.Now;
             var data1 = new DateTime(2024, 01, 05);
@@ -73,6 +73,25 @@ namespace Fundamentos
             Console.WriteLine(data2.ToLongTimeString());
             Console.WriteLine(data2.ToShortDateString());
             Console.WriteLine(data2.ToShortTimeString());
+            */
+
+            /* Trabalhando com arrays */
+            int[] numeros = new int[3];
+            numeros[0] = 10;
+            numeros[1] = 12;
+            numeros[2] = 13;
+
+            int[] pares = new int[3] { 2, 4, 6 };
+
+            int[] impares = new int[] { 1, 3, 5};
+
+            string[] nomes = new [] { "Janio", "Alexandre", "Ribeiro" };
+
+            string[] paises = {"Brasil", "EUA", "França"}; 
+
+            var cidades = new [] {"Baía Formosa", "Natal" };
+
+            Console.WriteLine(cidades[0]);
         }
     }
 }
