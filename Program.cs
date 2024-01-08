@@ -75,7 +75,7 @@ namespace Fundamentos
             Console.WriteLine(data2.ToShortTimeString());
             */
 
-            /* Trabalhando com arrays */
+            /* Trabalhando com arrays 
             int[] numeros = new int[3];
             numeros[0] = 10;
             numeros[1] = 12;
@@ -91,7 +91,17 @@ namespace Fundamentos
 
             var cidades = new [] {"Baía Formosa", "Natal" };
 
-            Console.WriteLine(cidades[0]);
+            Console.WriteLine(cidades[0]);*/
+
+            /* Operadores aritiméticos */
+            var a = 7;
+            var b = 3.0m;
+
+            Console.WriteLine(a + b);
+            Console.WriteLine(a - b);
+            Console.WriteLine(a * b);
+            Console.WriteLine(a / b);
+
         }
     }
 }
