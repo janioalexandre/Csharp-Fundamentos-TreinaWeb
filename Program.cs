@@ -101,7 +101,10 @@ namespace Fundamentos
             Console.WriteLine(a - b);
             Console.WriteLine(a * b);
             Console.WriteLine(a / b);
+            Console.WriteLine(a % b);
 
+            var c = 10 - b;
+            Console.WriteLine(c);
         }
     }
 }
