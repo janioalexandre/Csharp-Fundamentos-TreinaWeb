@@ -93,7 +93,7 @@ namespace Fundamentos
 
             Console.WriteLine(cidades[0]);*/
 
-            /* Operadores aritiméticos */
+            /* Operadores aritiméticos 
             var a = 7;
             var b = 3.0m;
 
@@ -105,6 +105,50 @@ namespace Fundamentos
 
             var c = 10 - b;
             Console.WriteLine(c);
+            */
+
+            /* Operadores aritiméticos - atribuição 
+
+            var a = 5;
+            var b = 5;
+            var c = 5;
+            var d = 5;
+            var e = 5;
+
+            a += 2; // a = a + 2;
+            b -= 2; // b = b - 2;
+            c *= 2; // c = c * 2;
+            d /= 2; // d = d / 2;
+            e %= 2; // e = e % 2;
+
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(c);
+            Console.WriteLine(d);
+            Console.WriteLine(e);
+            */
+
+            /* Operadores aritiméticos - unários de incremento e decremento 
+
+            var a = 5;
+            var b = 5;
+
+            a++;
+            b--;
+
+            Console.WriteLine(a);
+            */
+
+            /* Operadores aritiméticos - Operadores de comparação */
+            var a = 2;
+            var b = 3;
+            var iguais = a == b;
+            var diferentes = a != b;
+            var maior = a > b;
+            var maioOuIgual = a >= b; 
+            var menorOuIgual = a <= b;
+            
+            Console.WriteLine(a == b);
         }
     }
 }
