@@ -139,7 +139,7 @@ namespace Fundamentos
             Console.WriteLine(a);
             */
 
-            /* Operadores aritiméticos - Operadores de comparação */
+            /* Operadores aritiméticos - Operadores de comparação 
             var a = 2;
             var b = 3;
             var iguais = a == b;
@@ -149,6 +149,18 @@ namespace Fundamentos
             var menorOuIgual = a <= b;
             
             Console.WriteLine(a == b);
+            */
+            
+            /* Estruturas condicionais */
+            var a = 3;
+            var b = 2;
+            var ativo = true;
+            if(a > b && ativo == true)
+            {
+                Console.WriteLine("Condição verdadeira");
+                Console.WriteLine("É maior");
+            }
+            Console.WriteLine("Final");
         }
     }
 }
