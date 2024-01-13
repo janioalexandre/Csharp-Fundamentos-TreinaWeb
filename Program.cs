@@ -151,7 +151,7 @@ namespace Fundamentos
             Console.WriteLine(a == b);
             */
             
-            /* Estruturas condicionais */
+            /* Estruturas condicionais - IF 
             var a = 3;
             var b = 2;
             var ativo = true;
@@ -161,6 +161,26 @@ namespace Fundamentos
                 Console.WriteLine("É maior");
             }
             Console.WriteLine("Final");
+            */
+
+            /* Estrutura condicionais - IF-ELSE */
+            var idade = 16;
+
+            if (idade >= 18)
+            {
+                Console.WriteLine("Maior de idade");
+                Console.WriteLine("Cadastro autorizado");            
+            }
+            else if (idade >= 16 && idade < 18)
+            {
+                Console.WriteLine("Menos de idade (>16 anos)");
+                Console.WriteLine("Cadastro autorizado com responsáveis");            
+            }
+            else
+            {
+                Console.WriteLine("Menor de idade");
+                Console.WriteLine("Cadastro não autorizado");
+            }
         }
     }
 }
