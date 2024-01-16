@@ -182,6 +182,8 @@ namespace Fundamentos
                 Console.WriteLine("Cadastro não autorizado");
             }
             */
+
+            /* Estrutura condicionais - Switch 
             Console.WriteLine("Selecione a opção:");
             var opcao = Console.ReadLine();
 
@@ -199,6 +201,17 @@ namespace Fundamentos
                 default:
                 Console.WriteLine("Opção inválida");
                 break;
+            }
+            */
+
+            /* Estrutura de repetição - While */
+            var indice = 0;
+            var versoes = new[]{ "1.0", "1.1", "2.0", "3.0" };
+
+            while(indice < versoes.Length)
+            {
+                Console.WriteLine(versoes[indice]);
+                indice++;
             }
         }
     }
