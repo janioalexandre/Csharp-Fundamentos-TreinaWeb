@@ -204,7 +204,7 @@ namespace Fundamentos
             }
             */
 
-            /* Estrutura de repetição - While */
+            /* Estrutura de repetição - While 
             var indice = 0;
             var versoes = new[]{ "1.0", "1.1", "2.0", "3.0" };
 
@@ -212,6 +212,15 @@ namespace Fundamentos
             {
                 Console.WriteLine(versoes[indice]);
                 indice++;
+            }
+            */
+
+            /* Estrutura de repetição - FOR */
+            var numeros = new [] { 1, 10, 100, 1000 };
+            
+            for (var indice = 0; indice < numeros.Length; indice++)
+            {
+                Console.WriteLine(numeros[indice]);
             }
         }
     }
