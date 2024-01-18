@@ -215,12 +215,21 @@ namespace Fundamentos
             }
             */
 
-            /* Estrutura de repetição - FOR */
+            /* Estrutura de repetição - FOR 
             var numeros = new [] { 1, 10, 100, 1000 };
             
             for (var indice = 0; indice < numeros.Length; indice++)
             {
                 Console.WriteLine(numeros[indice]);
+            }
+            */
+
+            /* Estrutura de repetição - Foreach */
+            var nomes = new[]{ "Joel", "Fagner", "Felipe" };
+
+            foreach(var nome in nomes)
+            {
+                Console.WriteLine(nome);
             }
         }
     }
