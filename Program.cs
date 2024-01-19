@@ -2,6 +2,12 @@
 
 namespace Fundamentos
 {
+    class Aluno 
+    {
+        public string Nome;
+        public int Idade;
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -224,13 +230,22 @@ namespace Fundamentos
             }
             */
 
-            /* Estrutura de repetição - Foreach */
+            /* Estrutura de repetição - Foreach 
             var nomes = new[]{ "Joel", "Fagner", "Felipe" };
 
             foreach(var nome in nomes)
             {
                 Console.WriteLine(nome);
             }
+            */
+
+            /* Estrutura de repetição - Trabalhando com classes */
+            var aluno1 = new Aluno();
+            aluno1.Nome = "Janio Alexandre";
+            aluno1.Idade = 37;
+
+            Console.WriteLine(aluno1.Nome);
+            Console.WriteLine(aluno1.Idade);
         }
     }
 }
