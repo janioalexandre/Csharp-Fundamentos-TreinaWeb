@@ -8,6 +8,27 @@ namespace Fundamentos
         public int Idade;
     }
 
+    class ContaCorrente
+    {
+        public string Numero;
+        public decimal Saldo;
+
+        public void ImprimirInformacoes()
+        {
+            Console.WriteLine($"Número: { Numero } | Saldo: { Saldo }");
+        }
+
+        public string ListarInformacoes()
+        {
+            return $"NÚMERO: { Numero } | SALDO: { Saldo }";
+        }
+
+        public void Depositar(decimal valor)
+        {
+            Saldo += valor;
+        } 
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -239,13 +260,22 @@ namespace Fundamentos
             }
             */
 
-            /* Estrutura de repetição - Trabalhando com classes */
+            /* Estrutura de repetição - Trabalhando com classes 
             var aluno1 = new Aluno();
             aluno1.Nome = "Janio Alexandre";
             aluno1.Idade = 37;
 
             Console.WriteLine(aluno1.Nome);
             Console.WriteLine(aluno1.Idade);
+            */
+
+            var conta1 = new ContaCorrente();
+            conta1.Numero = "001-002";
+            conta1.Saldo = 0;
+            
+            //conta1.ImprimirInformacoes();
+            conta1.Depositar(100);
+            Console.WriteLine(conta1.ListarInformacoes());            
         }
     }
 }
