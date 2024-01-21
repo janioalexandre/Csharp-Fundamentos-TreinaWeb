@@ -1,4 +1,6 @@
 ﻿using System;
+using Financeiro;
+using RH;
 
 namespace Fundamentos
 {
@@ -267,7 +269,7 @@ namespace Fundamentos
 
             Console.WriteLine(aluno1.Nome);
             Console.WriteLine(aluno1.Idade);
-            */
+            
 
             var conta1 = new ContaCorrente();
             conta1.Numero = "001-002";
@@ -275,7 +277,15 @@ namespace Fundamentos
             
             //conta1.ImprimirInformacoes();
             conta1.Depositar(100);
-            Console.WriteLine(conta1.ListarInformacoes());            
+            Console.WriteLine(conta1.ListarInformacoes());  
+            */
+
+            /* 9 - Namespaces */ 
+            
+            var contaPagar = new ContaPagar();
+            var contaReceber = new ContaReceber();
+            var funcionario = new Funcionario();
+            var folhaPagamento = new FolhaPagamento(); 
         }
     }
 }
