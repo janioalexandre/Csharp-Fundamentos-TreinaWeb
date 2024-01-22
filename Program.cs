@@ -252,7 +252,7 @@ namespace Fundamentos
                 Console.WriteLine(numeros[indice]);
             }
             */
-
+            
             /* Estrutura de repetição - Foreach 
             var nomes = new[]{ "Joel", "Fagner", "Felipe" };
 
@@ -280,12 +280,35 @@ namespace Fundamentos
             Console.WriteLine(conta1.ListarInformacoes());  
             */
 
-            /* 9 - Namespaces */ 
+            /* 9 - Namespaces 
             
             var contaPagar = new ContaPagar();
             var contaReceber = new ContaReceber();
             var funcionario = new Funcionario();
             var folhaPagamento = new FolhaPagamento(); 
+            */ 
+
+            /* 10 - Tratamento de exceções */
+            try
+            {
+                var nomes = new [] { "Janio", "Alexandre", "Ribeiro" };
+                for (var indice = 0; indice <= nomes.Length; indice++)
+                {
+                    Console.WriteLine(nomes[indice]);
+                }
+
+            }
+            catch(Exception excecao)
+            {
+                Console.WriteLine("Ocorreu um erro: " + excecao.Message);   
+                Console.WriteLine("Ocorreu um erro: " + excecao.StackTrace);     
+            }
+            finally
+            {
+                Console.WriteLine("Programa encerrado.");
+            }
+
+            Console.WriteLine("Hello World");
         }
     }
 }
