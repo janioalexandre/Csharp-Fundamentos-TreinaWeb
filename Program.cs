@@ -288,7 +288,7 @@ namespace Fundamentos
             var folhaPagamento = new FolhaPagamento(); 
             */ 
 
-            /* 10 - Tratamento de exceções */
+            /* 10 - Tratamento de exceções 
             try
             {
                 var nomes = new [] { "Janio", "Alexandre", "Ribeiro" };
@@ -309,6 +309,7 @@ namespace Fundamentos
             }
 
             Console.WriteLine("Hello World");
+            */
         }
     }
 }
